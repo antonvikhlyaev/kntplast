@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>KNTPlast</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="news.html">Новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="products.html">Продукция</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="delivery.html">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Сделать заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-nav__phone phone">
+              <li class="phone__item">
+                <a href="tel:88007755829">8 (800) 775-58-29</a>
+              </li>
+              <li class="phone__item">
+                <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Переключатель языка сайта -->
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="page-content__container container">
+        <!-- <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">
+              <a>Сделать заказ</a>
+            </li>
+          </ul>
+        </div> -->
+        <section class="order">
+          <h1 class="order__title">Сделать заказ</h1>
+          <div class="order__wrapper">
+            <p class="order__text">Для того, чтобы начать оформление заказа нужно заполнить поля формы, далее после заполнения формы нажмите кнопку «Заказать». Для подтверждения заказа с Вами свяжется сотрудник компании.</p>
+            <form class="order__form" action="" method="post">
+              <ul class="order__list">
+                <li class="order__item">
+                  <label class="visually-hidden" for="direction">Выберите направление</label>
+                  <select class="order__select" id="direction">
+                    <option value="" disabled selected>Выберите направление</option>
+                    <option>Для натяжных потолков</option>
+                    <option>Мебельные уплотнители</option>
+                  </select>
+                </li>
+                <li class="order__item">
+                  <label class="visually-hidden" for="product">Выберите продукт</label>
+                  <select class="order__select" id="product">
+                    <option value="" disabled selected>Выберите продукт</option>
+                    <option>Гарпун</option>
+                    <option>Вставка</option>
+                    <option>Багет</option>
+                  </select>
+                </li>
+                <li class="order__item">
+                  <label class="visually-hidden" for="mark">Выберите марку</label>
+                  <select class="order__select" id="mark">
+                    <option value="" disabled selected>Выберите марку</option>
+                    <option>Вставка 2ф1 TL</option>
+                    <option>Вставка 2ф1 TL</option>
+                    <option>Вставка 2ф1 TL</option>
+                  </select>
+                </li>
+                <li class="order__item">
+                  <label class="visually-hidden" for="meters">Количество в метрах</label>
+                  <input class="order__input" id="meters" type="text" name="meters" value="" placeholder="Количество в метрах">
+                </li>
+                <li class="order__item">
+                  <label class="visually-hidden" for="company-name">Название компании</label>
+                  <input class="order__input" id="company-name" type="text" name="company-name" value="" placeholder="Количество в метрах">
+                </li>
+                <li class="order__item">
+                  <!-- TODO: Сделать валидацию и маску номера -->
+                  <label class="visually-hidden" for="phone">Номер телефона</label>
+                  <input class="order__input" id="phone" type="text" name="phone" value="" placeholder="Номер телефона">
+                </li>
+                <button class="order__button button" type="submit" name="button">Заказать</button>
+              </ul>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="news.html">Новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="products.html">Продукция</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="delivery.html">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="order.html">Сделать заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-nav__phone phone">
+              <li class="phone__item">
+                <a href="tel:88007755829">8 (800) 775-58-29</a>
+              </li>
+              <li class="phone__item">
+                <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
