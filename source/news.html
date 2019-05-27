@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>KNTPlast</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="products.html">Продукция</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="delivery.html">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="order.html">Сделать заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-nav__phone phone">
+              <li class="phone__item">
+                <a href="tel:88007755829">8 (800) 775-58-29</a>
+              </li>
+              <li class="phone__item">
+                <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Переключатель языка сайта -->
+        </nav>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="page-content__container container">
+        <!-- <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">
+              <a>Новости</a>
+            </li>
+          </ul>
+        </div> -->
+        <section class="news">
+          <div class="news__wrapper">
+            <div class="news__top">
+              <h1 class="news__title">Новости и статьи</h1>
+              <div class="news__search search">
+                <form class="search__form" method="post" action="https://echo.htmlacademy.ru">
+                  <p class="search__item">
+                    <label class="visually-hidden" for="search__input">Поиск по сайту</label>
+                    <input class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+                  </p>
+                  <button class="search__button" type="submit">Найти</button>
+                </form>
+              </div>
+            </div>
+            <div class="news__sorting sorting">
+              <span class="sorting__text">Сортировать по категории:</span>
+              <ul class="sorting__list">
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">Все</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">Производство</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">Выставки</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">Технологии производства</a>
+                </li>
+              </ul>
+            </div>
+            <div class="news__sorting sorting">
+              <span class="sorting__text">Выводить статьи по дате:</span>
+              <ul class="sorting__list">
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">2019</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">2018</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">2017</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">2016</a>
+                </li>
+                <li class="sorting__item">
+                  <a class="sorting__link" href="#">2015</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="news__list">
+              <li class="news__item">
+                <h3 class="news__name">Новое производство натяжных потолков</h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ приняла участие в открытии нового производства натяжных потолков нашими партнерами.
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Производство</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Международная Мебельная Выставка</h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ была спонсором Международной Мебельной Выставки в г. Москва.
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Выставки</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Второй Крымский Форум</h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ является Генеральным партнером и спонсором Второго Крымского Форума в 2018 году.
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Выставки</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Теоретически-практический семинар </h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ приняла участие в теоретически-практическом семинаре "Перезагрузка".
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Выставки</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Новое производство натяжных потолков</h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ приняла участие в открытии нового производства натяжных потолков нашими партнерами.
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Производство</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Международная Мебельная Выставка</h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ была спонсором Международной Мебельной Выставки в г. Москва.
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Выставки</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Второй Крымский Форум</h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ является Генеральным партнером и спонсором Второго Крымского Форума в 2018 году.
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Выставки</a>
+              </li>
+              <li class="news__item">
+                <h3 class="news__name">Теоретически-практический семинар </h3>
+                <p class="news__text">
+                  Компания КНТ-ПЛАСТ приняла участие в теоретически-практическом семинаре "Перезагрузка".
+                </p>
+                <a class="news__button button button--more" href="#">Подробнее</a>
+                <a class="news__tag" href="#">Выставки</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container container">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="about.html">О компании</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Новости</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="products.html">Продукция</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="delivery.html">Доставка</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="order.html">Сделать заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <ul class="main-nav__phone phone">
+              <li class="phone__item">
+                <a href="tel:88007755829">8 (800) 775-58-29</a>
+              </li>
+              <li class="phone__item">
+                <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Переключатель языка сайта -->
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
