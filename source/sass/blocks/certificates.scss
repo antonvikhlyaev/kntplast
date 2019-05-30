@@ -1,0 +1,41 @@
+.certificates {
+  margin-bottom: 100px;
+}
+
+.certificates__wrapper {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.certificates__title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
+  text-align: center;
+}
+
+.certificates__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.certificates__item {
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+  min-width: 290px;
+  max-width: 320px;
+}
+
+.certificates__item img {
+  width: 100%;
+}

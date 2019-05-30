@@ -1,0 +1,101 @@
+.about {
+  margin-bottom: 100px;
+}
+
+.about__wrapper {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  text-align: center;
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
+  text-align: center;
+}
+
+.about__list {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+}
+
+.about__item {
+  position: relative;
+
+  width: 270px;
+  margin: 0 auto 25px;
+  padding: 0;
+  padding-top: 80px;
+}
+
+.about__item--like::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 32px);
+
+  width: 64px;
+  height: 64px;
+
+  background-image: url(../img/icon__like.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about__item--planet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 32px);
+
+  width: 64px;
+  height: 64px;
+
+  background-image: url(../img/icon__planet.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about__item--thermometer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 32px);
+
+  width: 64px;
+  height: 64px;
+
+  background-image: url(../img/icon__thermometer.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about__item--document::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 32px);
+
+  width: 64px;
+  height: 70px;
+
+  background-image: url(../img/icon__document.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
