@@ -18,3 +18,17 @@
   margin: 0;
   padding: 20px 0 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding: 0 15px;
+  }
+
+  .page-footer__logo {
+    display: none;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+  }
+}

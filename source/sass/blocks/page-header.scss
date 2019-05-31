@@ -18,3 +18,17 @@
   margin: 0;
   padding: 20px 0 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 0 15px;
+  }
+
+  .page-header__logo {
+    display: none;
+  }
+
+  .page-header__wrapper {
+    flex-direction: row;
+  }
+}

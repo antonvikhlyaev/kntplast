@@ -35,3 +35,25 @@
 .phone__item:last-child a::after {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .phone {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .phone__item {
+    width: 100%;
+  }
+
+  .phone__item a {
+    &::after {
+      right: 0;
+      left: auto;
+
+      width: 1px;
+      height: 100%;
+    }
+  }
+}

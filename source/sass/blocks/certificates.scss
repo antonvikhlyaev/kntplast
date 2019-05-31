@@ -18,7 +18,6 @@
 .certificates__list {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -38,4 +37,39 @@
 
 .certificates__item img {
   width: 100%;
+}
+
+.certificates__frame {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.certificates__scrollbar {
+  margin-top: 20px;
+
+  width: 100%;
+  height: 15px;
+
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+.certificates__handle {
+  position: absolute;
+
+  width: 250px;
+	height: 15px;
+
+  background-color: $darkgray_color;
+  box-shadow: 0px 10px 20px #D8D8D8;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .certificates__wrapper {
+    padding: 0 30px;
+  }
 }

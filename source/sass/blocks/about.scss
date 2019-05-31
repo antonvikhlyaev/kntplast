@@ -99,3 +99,22 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    padding: 0 30px;
+  }
+
+  .about__text {
+    padding: 0 50px;
+  }
+
+  .about__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 350px;
+  }
+}
