@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>KNTPlast</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="page-header">
-      <div class="page-header__container container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-header__logo-file" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-file" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a>О компании</a>
@@ -42,6 +48,9 @@
               </li>
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -50,41 +59,41 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__container container">
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item breadcrumbs__item--current">
-              <a>О компании</a>
-            </li>
-          </ul>
-        </div>
-        <section class="about">
-          <div class="about__wrapper">
-            <h1 class="about__title">О компании</h1>
-            <p class="about__text">
-              Компания ПКФ “КНТ ПЛАСТ” является одной из ведущих компаний по производству изделий из ПВХ, в том числе крупным производителем комплектующих для натяжных потолков. Войдя на рынок в 2014 году компания уже завоевала репутацию надёжного партнёра для многочисленных заказчиков.
-            </p>
-            <p class="about__text">
-              Компания ПКФ “КНТ-ПЛАСТ” активно развивает рынок России и ближнего зарубежья. Нашими главными приоритетами являются качество и сервис. Имея собственную лабораторию и квалифицированных специалистов, мы разрабатываем изделия максимально удовлетворяющие требованиям рынка.
-            </p>
-          </div>
-        </section>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <a>О компании</a>
+          </li>
+        </ul>
       </div>
+      <section class="about about--inner">
+        <div class="about__wrapper">
+          <h1 class="about__title">О компании</h1>
+          <p class="about__text">
+            Компания ПКФ “КНТ ПЛАСТ” является одной из ведущих компаний по производству изделий из ПВХ, в том числе крупным производителем комплектующих для натяжных потолков. Войдя на рынок в 2014 году компания уже завоевала репутацию надёжного партнёра для многочисленных заказчиков.
+          </p>
+          <p class="about__text">
+            Компания ПКФ “КНТ-ПЛАСТ” активно развивает рынок России и ближнего зарубежья. Нашими главными приоритетами являются качество и сервис. Имея собственную лабораторию и квалифицированных специалистов, мы разрабатываем изделия максимально удовлетворяющие требованиям рынка.
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
-        <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-file" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo">
+              <img class="main-nav__logo-file" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a>О компании</a>
+                <a href="about.html">О компании</a>
               </li>
               <li class="main-nav__item">
                 <a href="news.html">Новости</a>
@@ -109,11 +118,15 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
           <!-- Переключатель языка сайта -->
         </nav>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
