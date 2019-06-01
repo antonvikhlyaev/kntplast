@@ -118,3 +118,21 @@
     width: 350px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin: 0 auto 100px;
+    padding: 0 15px;
+
+    width: 1140px;
+  }
+
+  .about__item {
+    text-align: left;
+    width: 196px;
+
+    &::before {
+      left: 0;
+    }
+  }
+}

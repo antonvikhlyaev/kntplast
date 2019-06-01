@@ -1,10 +1,11 @@
 .certificates {
   margin-bottom: 100px;
+  padding: 0 15px;
 }
 
 .certificates__wrapper {
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .certificates__title {
@@ -69,7 +70,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .certificates__wrapper {
+  .certificates {
     padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .certificates {
+    margin: 0 auto 100px;
+    padding: 0 15px;
+
+    width: 1140px;
   }
 }
