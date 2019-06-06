@@ -28,10 +28,9 @@
 
 .news__list {
   display: flex;
-  align-items: stretch;
   flex-wrap: wrap;
   justify-content: center;
-
+  align-items: stretch;
   margin: 0;
   padding: 0;
 
@@ -40,20 +39,17 @@
 
 .news__item {
   display: flex;
-  flex-direction: column;
   flex-shrink: 0;
-
+  flex-direction: column;
+  width: 240px;
   margin: 0 10px;
   margin-bottom: 20px;
   padding: 160px 25px 20px 25px;
 
-
-  width: 240px;
-
-  border-radius: 20px;
-
   color: #ffffff;
+
   background-image: linear-gradient(to top, #68ba57, #3ebdd8 61%);
+  border-radius: 20px;
 
   &:first-child {
     margin-left: 0;
@@ -70,31 +66,26 @@
 
 
 .news__bottom {
-  margin-top: auto;
-
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .news__tag {
   display: inline-block;
-
   margin: 0;
   padding: 5px 10px;
 
   font-size: 14px;
-  text-decoration: underline;
-
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .news__scrollbar {
-  margin-top: 20px;
-
   width: 100%;
   height: 15px;
+  margin-top: 20px;
 
   background-color: #f1f1f1;
   border-radius: 20px;
@@ -104,12 +95,11 @@
   position: absolute;
 
   width: 250px;
-	height: 15px;
+  height: 15px;
 
   background-color: $darkgray_color;
-  box-shadow: 0px 10px 20px #D8D8D8;
   border-radius: 20px;
-
+  box-shadow: 0 10px 20px #d8d8d8;
   cursor: pointer;
 }
 
@@ -122,7 +112,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-bottom: 20px;
   }
 
@@ -136,8 +125,8 @@
 
   .news__item {
     margin: 0;
-    margin-bottom: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 
     &:last-child {
       margin-right: 0;
@@ -146,7 +135,6 @@
 
   .inner-page .news__item {
     box-sizing: border-box;
-
     width: 270px;
 
     &:first-child {
@@ -161,16 +149,14 @@
 
 @media (min-width: $desktop-width) {
   .news {
+    max-width: 1902px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    max-width: 1902px;
   }
 
   .inner-page .news {
+    width: 1140px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    width: 1140px;
   }
 }

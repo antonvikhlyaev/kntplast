@@ -28,7 +28,6 @@
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-
   margin: 0;
   padding: 0;
 
@@ -122,15 +121,15 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    width: 1140px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    width: 1140px;
   }
 
   .about__item {
-    text-align: left;
     width: 196px;
+
+    text-align: left;
 
     &::before {
       left: 0;
@@ -144,6 +143,7 @@
 
   & .about__title {
     margin-bottom: 35px;
+
     text-align: left;
   }
 
@@ -158,9 +158,8 @@
       padding: 50px;
 
       background-color: #ffffff;
-
-      border-radius: 30px;
       border: 1px solid #e8eaed;
+      border-radius: 30px;
     }
 
     .about__text {

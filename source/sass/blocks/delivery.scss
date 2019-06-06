@@ -10,7 +10,6 @@
   padding: 0;
 
   line-height: normal;
-
   text-align: left;
 }
 
@@ -39,9 +38,8 @@
     padding: 50px;
 
     background-color: #ffffff;
-
-    border-radius: 30px;
     border: 1px solid #e8eaed;
+    border-radius: 30px;
   }
 
   .delivery__text {
@@ -51,9 +49,8 @@
 
 @media (min-width: $desktop-width) {
   .delivery {
+    width: 1140px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    width: 1140px;
   }
 }

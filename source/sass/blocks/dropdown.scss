@@ -14,28 +14,25 @@
 }
 
 .dropdown__link {
-  box-sizing: border-box;
-
   display: block;
-
+  box-sizing: border-box;
   margin: 0;
   margin-bottom: 20px;
   padding: 20px;
 
-  text-align: center;
-
   font: inherit;
   line-height: 20px;
+  text-align: center;
+  color: $darkgray_color;
 
   border: 1px solid #f1f1f1;
   border-radius: 30px;
 
-  color: $darkgray_color;
-
   &:focus,
   &:hover {
-    border: 1px solid #f58e48;
     color: $darkgray_color;
+
+    border: 1px solid #f58e48;
   }
 
   &:active {

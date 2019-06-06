@@ -60,21 +60,20 @@
 
 @media (min-width: $desktop-width) {
   .phone {
-    align-items: center;
-    align-content: center;
     flex-shrink: 0;
-    width: 310px;
-
-    margin: 0;
     flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 310px;
+    margin: 0;
 
     font-weight: 300;
     font-size: 14px;
   }
 
   .phone__item {
-    width: auto;
     flex-shrink: 0;
+    width: auto;
     & a {
       padding: 10px 15px;
     }
@@ -89,6 +88,4 @@
   .phone__item--email {
     display: none;
   }
-
-
 }

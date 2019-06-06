@@ -38,25 +38,22 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 500px auto;
-
-    border-radius: 30px;
     border: 1px solid #e8eaed;
+    border-radius: 30px;
   }
 
   .contacts__text {
+    width: 400px;
     margin-bottom: 35px;
     padding: 0;
-
-    width: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
+    width: 1140px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    width: 1140px;
   }
 
   .contacts__wrapper {

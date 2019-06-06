@@ -27,7 +27,6 @@
 .order__list {
   display: flex;
   flex-direction: column;
-
   margin: 0;
   padding: 0;
 
@@ -35,11 +34,10 @@
 }
 
 .order__item {
+  width: 100%;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-
-  width: 100%;
 }
 
 .order__select {
@@ -48,22 +46,20 @@
 
 .order__input {
   box-sizing: border-box;
-
+  width: 100%;
   margin: 0;
   padding: 20px;
-
-  width: 100%;
-
-  border-radius: 30px;
-  border: 1px solid $lightgray_color;
 
   font: inherit;
   line-height: 18px;
 
+  border: 1px solid $lightgray_color;
+  border-radius: 30px;
+
   &:focus,
   &:hover {
-    outline: none;
     border-color: #98c859;
+    outline: none;
   }
 }
 
@@ -76,9 +72,8 @@
     padding: 50px;
 
     background-color: #ffffff;
-
-    border-radius: 30px;
     border: 1px solid #e8eaed;
+    border-radius: 30px;
   }
 
   .order__text {
@@ -88,10 +83,9 @@
 
 @media (min-width: $desktop-width) {
   .order {
+    width: 1140px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    width: 1140px;
   }
 
   .order__list {

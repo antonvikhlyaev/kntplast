@@ -28,14 +28,12 @@
 .products__card {
   display: flex;
   flex-direction: column;
-
   margin-bottom: 20px;
   padding: 30px;
 
   background-color: #ffffff;
-
-  border-radius: 30px;
   border: 1px solid $lightgray_color;
+  border-radius: 30px;
 
   &:focus,
   &:hover {
@@ -78,7 +76,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-bottom: 20px;
   }
 
@@ -87,24 +84,20 @@
   }
 
   .products__price {
-    margin-bottom: 0;
-
     max-width: 300px;
+    margin-bottom: 0;
   }
 
   .products__card {
     flex-direction: row;
-
     padding: 30px;
   }
 
   .products__image {
     flex-shrink: 0;
-
+    width: 200px;
     margin: 0;
     margin-right: 20px;
-
-    width: 200px;
   }
 
   .products__drawing {
@@ -114,26 +107,21 @@
 
 @media (min-width: $desktop-width) {
   .products {
+    width: 1140px;
     margin: 0 auto 100px;
     padding: 0 15px;
-
-    width: 1140px;
   }
 
   .products__drawing {
-    flex-shrink: 0;
-
     display: block;
-
+    flex-shrink: 0;
+    width: 200px;
     margin: 0;
     margin-right: 20px;
-    width: 200px;
   }
 
   .products__price {
-    margin-bottom: 0;
-
     max-width: 350px;
+    margin-bottom: 0;
   }
-
 }

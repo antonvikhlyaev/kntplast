@@ -95,11 +95,13 @@
   &[href]:focus,
   &[href]:hover {
     color: #ffffff;
+
     background-color: #f58e48;
   }
 
   &:not([href]) {
     color: #ffffff;
+
     background-color: #98c859;
   }
 }
@@ -119,9 +121,7 @@
 
   .main-nav__logo {
     display: block;
-
     width: 103px;
-
     margin: 20px;
   }
 
@@ -146,7 +146,6 @@
     &[href]:focus::after,
     &[href]:hover::after {
       content: "";
-
       position: absolute;
       bottom: 0;
       left: 0;
@@ -159,7 +158,6 @@
 
     &:not([href]):after {
       content: "";
-
       position: absolute;
       bottom: 0;
       left: 0;
@@ -173,11 +171,13 @@
     &[href]:focus,
     &[href]:hover {
       color: $darkgray_color;
+
       background: none;
     }
 
     &:not([href]) {
       color: $darkgray_color;
+
       background: none;
     }
   }
@@ -196,23 +196,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     width: 100%;
 
     font-size: 14px;
   }
 
   .main-nav__item a {
-      padding: 10px 15px;
+    padding: 10px 15px;
 
-      &[href]:focus::after,
-      &[href]:hover::after {
-        bottom: -27px;
-      }
+    &[href]:focus::after,
+    &[href]:hover::after {
+      bottom: -27px;
+    }
 
-      &:not([href]):after {
-        bottom: -27px;
-      }
+    &:not([href]):after {
+      bottom: -27px;
+    }
   }
 }

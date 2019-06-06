@@ -6,7 +6,6 @@
 
 .button--rounded {
   box-sizing: border-box;
-
   margin: 0;
   padding: 20px;
 
@@ -20,21 +19,22 @@
 .button--order {
   width: 100%;
 
+  color: #ffffff;
+
+  background-color: #f58e48;
   border: 1px solid #f58e48;
   border-radius: 30px;
-
-  color: #ffffff;
-  background-color: #f58e48;
 
   &:focus,
   &:hover {
     color: $darkgray_color;
-    border: 1px solid #f58e48;
+
     background-color: #ffffff;
+    border: 1px solid #f58e48;
   }
 
   &:focus span::before,
-  &:hover span::before{
+  &:hover span::before {
     background-image: url(../img/icon__cart--hover.svg);
   }
 
@@ -45,7 +45,6 @@
 
     &::before {
       content: "";
-
       position: absolute;
       top: -3px;
       left: 0;
@@ -54,8 +53,8 @@
       height: 25px;
 
       background-image: url(../img/icon__cart.svg);
-      background-position: center;
       background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
@@ -63,21 +62,22 @@
 .button--price {
   width: 100%;
 
+  color: #ffffff;
+
+  background-color: #98c859;
   border: 1px solid #98c859;
   border-radius: 30px;
-
-  color: #ffffff;
-  background-color: #98c859;
 
   &:focus,
   &:hover {
     color: $darkgray_color;
-    border: 1px solid #98c859;
+
     background-color: #ffffff;
+    border: 1px solid #98c859;
   }
 
   &:focus span::before,
-  &:hover span::before{
+  &:hover span::before {
     background-image: url(../img/icon__price--hover.svg);
   }
 
@@ -88,7 +88,6 @@
 
     &::before {
       content: "";
-
       position: absolute;
       top: -3px;
       left: 0;
@@ -97,8 +96,8 @@
       height: 25px;
 
       background-image: url(../img/icon__price.svg);
-      background-position: center;
       background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
@@ -107,9 +106,8 @@
   margin: 0;
   padding: 5px 10px;
 
-  font-size: 14px;
   font-weight: 600;
-
+  font-size: 14px;
   color: #ffffff;
 
   background-color: rgba(0, 0, 0, 0.1);
