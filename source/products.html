@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>KNTPlast</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="page-header">
-      <div class="page-header__container container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-header__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -42,6 +48,9 @@
               </li>
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -50,186 +59,185 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__container container">
-        <section class="products">
-          <div class="products__wrapper">
-            <div class="products__top">
-              <h1 class="products__title">Продукция</h1>
-              <a class="products__price button button--price">Скачать прайс-лист</a>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <a>Продукция</a>
+          </li>
+        </ul>
+      </div>
+      <section class="products">
+        <div class="products__wrapper">
+          <div class="products__top">
+            <h1 class="products__title">Продукция</h1>
+            <a class="products__price button button--rounded button--price" href="#"><span>Скачать прайс-лист</span></a>
+          </div>
+          <div class="products__sorting sorting">
+            <span class="sorting__text">Выберите нужное направление:</span>
+            <div class="sorting__controls">
+              <button class="button button--rounded sorting__button sorting__button--ceiling" type="button">Комплектующие для натяжных потолков</button>
+              <button class="button button--rounded sorting__button sorting__button--furniture" type="button">Мебельные уплотнители</button>
             </div>
-            <div class="products__sorting sorting">
-              <span class="sorting__text">Выберите нужное направление:</span>
-              <ul class="sorting__list">
-                <li class="sorting__item sorting__item--ceiling">
-                  <a href="#">Комплектующие для натяжных потолков</a>
-                  <ul class="sorting__dropdown dropdown">
-                    <li class="dropdown__item">
-                      <a href="#">Гарпун</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="#">Вставка</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="#">Багет</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="sorting__item sorting__item--furniture">
-                  <a href="#">Мебельные уплотнители</a>
-                  <ul class="sorting__dropdown dropdown">
-                    <li class="dropdown__item">
-                      <a href="#">Уплотнители для шкафов купе</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="#">Уплотнители для фасадов из МДФ</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="#">Уплотнители для фасадов из алюминиевого профиля</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <ul class="products__list">
-              <li class="products__item">
-                <a class="products__link" href="product-item.html">
-                  <div class="product__card">
-                    <p class="products__image">
-                      <img src="img/products/1.jpg" alt="Фото штапика для стекла 5.5х7мм">
-                    </p>
-                    <p class="products__drawing">
-                      <img src="img/products/1-drawing.jpg" alt="Схема штапика для стекла 5.5х7мм">
-                    </p>
-                    <h3 class="products__name">Штапик для стекла 5.5х7мм</h3>
-                    <p class="products__text">
-                      Профиль для крепления витражей, ПВХ 5.5х7мм, в бухтах.
-                    </p>
-                    <div class="products__colors">
-                      <ul class="products__colors-list">
-                        <li class="products__color products__color--white">
-                          <span class="visually-hidden">Белый</span>
-                        </li>
-                        <li class="products__color products__color--brown">
-                          <span class="visually-hidden">Коричневый</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </a>
+            <ul class="sorting__dropdown sorting__dropdown--ceiling dropdown dropdown--closed">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Гарпун</a>
               </li>
-              <li class="products__item">
-                <a class="products__link" href="product-item.html">
-                  <div class="product__card">
-                    <p class="products__image">
-                      <img src="img/products/2.jpg" alt="Фото уплотнителя Б1232">
-                    </p>
-                    <p class="products__drawing">
-                      <img src="img/products/2-drawing.jpg" alt="Схема уплотнителя Б1232">
-                    </p>
-                    <h3 class="products__name">Уплотнитель Б1232</h3>
-                    <p class="products__text">
-                      Предназначен для установки стекла или зеркала толщиной 4 мм в алюминиевые профиля для изготовления рамочных фасадов.
-                    </p>
-                  </div>
-                </a>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Вставка</a>
               </li>
-              <li class="products__item">
-                <a class="products__link" href="product-item.html">
-                  <div class="product__card">
-                    <p class="products__image">
-                      <img src="img/products/1.jpg" alt="Фото штапика для стекла 5.5х7мм">
-                    </p>
-                    <p class="products__drawing">
-                      <img src="img/products/1-drawing.jpg" alt="Схема штапика для стекла 5.5х7мм">
-                    </p>
-                    <h3 class="products__name">Штапик для стекла 5.5х7мм</h3>
-                    <p class="products__text">
-                      Профиль для крепления витражей, ПВХ 5.5х7мм, в бухтах.
-                    </p>
-                    <div class="products__colors">
-                      <ul class="products__colors-list">
-                        <li class="products__color products__color--white">
-                          <span class="visually-hidden">Белый</span>
-                        </li>
-                        <li class="products__color products__color--brown">
-                          <span class="visually-hidden">Коричневый</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </a>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Багет</a>
               </li>
-              <li class="products__item">
-                <a class="products__link" href="product-item.html">
-                  <div class="product__card">
-                    <p class="products__image">
-                      <img src="img/products/2.jpg" alt="Фото уплотнителя Б1232">
-                    </p>
-                    <p class="products__drawing">
-                      <img src="img/products/2-drawing.jpg" alt="Схема уплотнителя Б1232">
-                    </p>
-                    <h3 class="products__name">Уплотнитель Б1232</h3>
-                    <p class="products__text">
-                      Предназначен для установки стекла или зеркала толщиной 4 мм в алюминиевые профиля для изготовления рамочных фасадов.
-                    </p>
-                  </div>
-                </a>
+            </ul>
+            <ul class="sorting__dropdown sorting__dropdown--furniture dropdown dropdown--closed">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Уплотнители для шкафов купе</a>
               </li>
-              <li class="products__item">
-                <a class="products__link" href="product-item.html">
-                  <div class="product__card">
-                    <p class="products__image">
-                      <img src="img/products/1.jpg" alt="Фото штапика для стекла 5.5х7мм">
-                    </p>
-                    <p class="products__drawing">
-                      <img src="img/products/1-drawing.jpg" alt="Схема штапика для стекла 5.5х7мм">
-                    </p>
-                    <h3 class="products__name">Штапик для стекла 5.5х7мм</h3>
-                    <p class="products__text">
-                      Профиль для крепления витражей, ПВХ 5.5х7мм, в бухтах.
-                    </p>
-                    <div class="products__colors">
-                      <ul class="products__colors-list">
-                        <li class="products__color products__color--white">
-                          <span class="visually-hidden">Белый</span>
-                        </li>
-                        <li class="products__color products__color--brown">
-                          <span class="visually-hidden">Коричневый</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </a>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Уплотнители для фасадов из МДФ</a>
               </li>
-              <li class="products__item">
-                <a class="products__link" href="product-item.html">
-                  <div class="product__card">
-                    <p class="products__image">
-                      <img src="img/products/2.jpg" alt="Фото уплотнителя Б1232">
-                    </p>
-                    <p class="products__drawing">
-                      <img src="img/products/2-drawing.jpg" alt="Схема уплотнителя Б1232">
-                    </p>
-                    <h3 class="products__name">Уплотнитель Б1232</h3>
-                    <p class="products__text">
-                      Предназначен для установки стекла или зеркала толщиной 4 мм в алюминиевые профиля для изготовления рамочных фасадов.
-                    </p>
-                  </div>
-                </a>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Уплотнители для фасадов из алюминиевого профиля</a>
               </li>
             </ul>
           </div>
-        </section>
-      </div>
+          <ul class="products__list">
+            <li class="products__item">
+              <a class="products__link" href="product-item.html">
+                <div class="products__card">
+                  <p class="products__image">
+                    <img src="img/products/1.png" alt="Фото штапика для стекла 5.5х7мм">
+                  </p>
+                  <p class="products__drawing">
+                    <img src="img/products/1-drawing.png" alt="Схема штапика для стекла 5.5х7мм">
+                  </p>
+                  <div class="products__desc">
+                    <h3 class="products__name">Штапик для стекла 5.5х7мм</h3>
+                    <p class="products__text">
+                      Профиль для крепления витражей, ПВХ 5.5х7мм, в бухтах.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="product-item.html">
+                <div class="products__card">
+                  <p class="products__image">
+                    <img src="img/products/2.png" alt="Фото уплотнителя Б1232">
+                  </p>
+                  <p class="products__drawing">
+                    <img src="img/products/2-drawing.jpg" alt="Схема уплотнителя Б1232">
+                  </p>
+                  <div class="products__desc">
+                    <h3 class="products__name">Уплотнитель Б1232</h3>
+                    <p class="products__text">
+                      Предназначен для установки стекла или зеркала толщиной 4 мм в алюминиевые профиля для изготовления рамочных фасадов.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="product-item.html">
+                <div class="products__card">
+                  <p class="products__image">
+                    <img src="img/products/1.png" alt="Фото штапика для стекла 5.5х7мм">
+                  </p>
+                  <p class="products__drawing">
+                    <img src="img/products/1-drawing.png" alt="Схема штапика для стекла 5.5х7мм">
+                  </p>
+                  <div class="products__desc">
+                    <h3 class="products__name">Штапик для стекла 5.5х7мм</h3>
+                    <p class="products__text">
+                      Профиль для крепления витражей, ПВХ 5.5х7мм, в бухтах.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="product-item.html">
+                <div class="products__card">
+                  <p class="products__image">
+                    <img src="img/products/2.png" alt="Фото уплотнителя Б1232">
+                  </p>
+                  <p class="products__drawing">
+                    <img src="img/products/2-drawing.jpg" alt="Схема уплотнителя Б1232">
+                  </p>
+                  <div class="products__desc">
+                    <h3 class="products__name">Уплотнитель Б1232</h3>
+                    <p class="products__text">
+                      Предназначен для установки стекла или зеркала толщиной 4 мм в алюминиевые профиля для изготовления рамочных фасадов.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="product-item.html">
+                <div class="products__card">
+                  <p class="products__image">
+                    <img src="img/products/1.png" alt="Фото штапика для стекла 5.5х7мм">
+                  </p>
+                  <p class="products__drawing">
+                    <img src="img/products/1-drawing.png" alt="Схема штапика для стекла 5.5х7мм">
+                  </p>
+                  <div class="products__desc">
+                    <h3 class="products__name">Штапик для стекла 5.5х7мм</h3>
+                    <p class="products__text">
+                      Профиль для крепления витражей, ПВХ 5.5х7мм, в бухтах.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="product-item.html">
+                <div class="products__card">
+                  <p class="products__image">
+                    <img src="img/products/2.png" alt="Фото уплотнителя Б1232">
+                  </p>
+                  <p class="products__drawing">
+                    <img src="img/products/2-drawing.jpg" alt="Схема уплотнителя Б1232">
+                  </p>
+                  <div class="products__desc">
+                    <h3 class="products__name">Уплотнитель Б1232</h3>
+                    <p class="products__text">
+                      Предназначен для установки стекла или зеркала толщиной 4 мм в алюминиевые профиля для изготовления рамочных фасадов.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="products__pagination pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--current" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-footer__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -257,11 +265,15 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
           <!-- Переключатель языка сайта -->
         </nav>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

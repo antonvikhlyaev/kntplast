@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>KNTPlast</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="page-header">
-      <div class="page-header__container container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-header__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -42,6 +48,9 @@
               </li>
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
+              </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -50,35 +59,35 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__container container">
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item breadcrumbs__item--current">
-              <a>Доставка</a>
-            </li>
-          </ul>
-        </div>
-        <section class="delivery">
-          <div class="delivery__wrapper">
-            <h1 class="delivery__title">Доставка</h1>
-            <p class="delivery__text">
-              Тесно сотрудничаем с транспортной компанией Байкал Сервис, по желанию можем отгрузить любой другой транспортной компанией. Отгрузку от 5 тонн отправляем попутным грузом (меньше отправлять выгодно только в ближайшие регионы от нас), контейнером (10-25 тонн) или фурой (10-20 тонн). Имея свой логистический отдел мы находим транспорт в максимально короткие сроки и по выгодным ценам, по России и СНГ. По всем вопросам просьба писать на почту <a href="mailto:sales@kntplast.com">sales@kntplast.com</a>
-            </p>
-          </div>
-        </section>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <a>Доставка</a>
+          </li>
+        </ul>
       </div>
+      <section class="delivery">
+        <div class="delivery__wrapper">
+          <h1 class="delivery__title">Доставка</h1>
+          <p class="delivery__text">
+            Тесно сотрудничаем с транспортной компанией Байкал Сервис, по желанию можем отгрузить любой другой транспортной компанией. Отгрузку от 5 тонн отправляем попутным грузом (меньше отправлять выгодно только в ближайшие регионы от нас), контейнером (10-25 тонн) или фурой (10-20 тонн). Имея свой логистический отдел мы находим транспорт в максимально короткие сроки и по выгодным ценам, по России и СНГ. По всем вопросам просьба писать на почту <a href="mailto:sales@kntplast.com">sales@kntplast.com</a>
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-footer__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -106,11 +115,15 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
           <!-- Переключатель языка сайта -->
         </nav>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -154,7 +154,6 @@
   @media (min-width: $tablet-width) {
     padding: 0 30px;
 
-
     .about__wrapper {
       padding: 50px;
 
@@ -167,5 +166,9 @@
     .about__text {
       padding: 0;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 15px;
   }
 }

@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>KNTPlast</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="page-header">
-      <div class="page-header__container container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-header__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -43,6 +49,9 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
           <!-- Переключатель языка сайта -->
@@ -50,77 +59,77 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__container container">
-        <!-- <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs__item breadcrumbs__item--current">
-              <a>Сделать заказ</a>
-            </li>
-          </ul>
-        </div> -->
-        <section class="order">
-          <h1 class="order__title">Сделать заказ</h1>
-          <div class="order__wrapper">
-            <p class="order__text">Для того, чтобы начать оформление заказа нужно заполнить поля формы, далее после заполнения формы нажмите кнопку «Заказать». Для подтверждения заказа с Вами свяжется сотрудник компании.</p>
-            <form class="order__form" action="" method="post">
-              <ul class="order__list">
-                <li class="order__item">
-                  <label class="visually-hidden" for="direction">Выберите направление</label>
-                  <select class="order__select" id="direction">
-                    <option value="" disabled selected>Выберите направление</option>
-                    <option>Для натяжных потолков</option>
-                    <option>Мебельные уплотнители</option>
-                  </select>
-                </li>
-                <li class="order__item">
-                  <label class="visually-hidden" for="product">Выберите продукт</label>
-                  <select class="order__select" id="product">
-                    <option value="" disabled selected>Выберите продукт</option>
-                    <option>Гарпун</option>
-                    <option>Вставка</option>
-                    <option>Багет</option>
-                  </select>
-                </li>
-                <li class="order__item">
-                  <label class="visually-hidden" for="mark">Выберите марку</label>
-                  <select class="order__select" id="mark">
-                    <option value="" disabled selected>Выберите марку</option>
-                    <option>Вставка 2ф1 TL</option>
-                    <option>Вставка 2ф1 TL</option>
-                    <option>Вставка 2ф1 TL</option>
-                  </select>
-                </li>
-                <li class="order__item">
-                  <label class="visually-hidden" for="meters">Количество в метрах</label>
-                  <input class="order__input" id="meters" type="text" name="meters" value="" placeholder="Количество в метрах">
-                </li>
-                <li class="order__item">
-                  <label class="visually-hidden" for="company-name">Название компании</label>
-                  <input class="order__input" id="company-name" type="text" name="company-name" value="" placeholder="Количество в метрах">
-                </li>
-                <li class="order__item">
-                  <!-- TODO: Сделать валидацию и маску номера -->
-                  <label class="visually-hidden" for="phone">Номер телефона</label>
-                  <input class="order__input" id="phone" type="text" name="phone" value="" placeholder="Номер телефона">
-                </li>
-                <button class="order__button button" type="submit" name="button">Заказать</button>
-              </ul>
-            </form>
-          </div>
-        </section>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <a>Сделать заказ</a>
+          </li>
+        </ul>
       </div>
+      <section class="order">
+        <div class="order__wrapper">
+          <h1 class="order__title">Сделать заказ</h1>
+          <p class="order__text">Для того, чтобы начать оформление заказа нужно заполнить поля формы, далее после заполнения формы нажмите кнопку «Заказать». Для подтверждения заказа с Вами свяжется сотрудник компании.</p>
+          <form class="order__form" action="" method="post">
+            <ul class="order__list">
+              <li class="order__item order__item--select">
+                <label class="visually-hidden" for="direction">Выберите направление</label>
+                <select class="order__select" id="direction">
+                  <option value="" disabled selected>Выберите направление</option>
+                  <option>Для натяжных потолков</option>
+                  <option>Мебельные уплотнители</option>
+                </select>
+              </li>
+              <li class="order__item order__item--select">
+                <label class="visually-hidden" for="product">Выберите продукт</label>
+                <select class="order__select" id="product">
+                  <option value="" disabled selected>Выберите продукт</option>
+                  <option>Гарпун</option>
+                  <option>Вставка</option>
+                  <option>Багет</option>
+                </select>
+              </li>
+              <li class="order__item order__item--select">
+                <label class="visually-hidden" for="mark">Выберите марку</label>
+                <select class="order__select" id="mark">
+                  <option value="" disabled selected>Выберите марку</option>
+                  <option>Вставка 2ф1 TL</option>
+                  <option>Вставка 2ф1 TL</option>
+                  <option>Вставка 2ф1 TL</option>
+                </select>
+              </li>
+              <li class="order__item">
+                <label class="visually-hidden" for="meters">Количество в метрах</label>
+                <input class="order__input" id="meters" type="text" name="meters" value="" placeholder="Количество в метрах">
+              </li>
+              <li class="order__item">
+                <label class="visually-hidden" for="company-name">Название компании</label>
+                <input class="order__input" id="company-name" type="text" name="company-name" value="" placeholder="Количество в метрах">
+              </li>
+              <li class="order__item">
+                <!-- TODO: Сделать валидацию и маску номера -->
+                <label class="visually-hidden" for="phone">Номер телефона</label>
+                <input class="order__input" id="phone" type="text" name="phone" value="" placeholder="Номер телефона">
+              </li>
+              <button class="order__button button button--rounded button--order" type="submit" name="button"><span>Заказать</span></button>
+            </ul>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -135,7 +144,7 @@
                 <a href="delivery.html">Доставка</a>
               </li>
               <li class="main-nav__item">
-                <a href="order.html">Сделать заказ</a>
+                <a>Сделать заказ</a>
               </li>
               <li class="main-nav__item">
                 <a href="contacts.html">Контакты</a>
@@ -148,10 +157,25 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
+          <!-- Переключатель языка сайта -->
         </nav>
       </div>
     </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/formstyler.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function($) {
+        $(function() {
+          $('select').styler();
+        });
+      })(jQuery);
+    </script>
+
   </body>
 </html>

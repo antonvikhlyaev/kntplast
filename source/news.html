@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>KNTPlast</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="page-header">
-      <div class="page-header__container container">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-file" src="img/page-header__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-header__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -43,6 +49,9 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
           <!-- Переключатель языка сайта -->
@@ -50,8 +59,7 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="page-content__container container">
-        <!-- <div class="breadcrumbs">
+        <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a href="index.html">Главная</a>
@@ -60,7 +68,7 @@
               <a>Новости</a>
             </li>
           </ul>
-        </div> -->
+        </div>
         <section class="news">
           <div class="news__wrapper">
             <div class="news__top">
@@ -68,10 +76,10 @@
               <div class="news__search search">
                 <form class="search__form" method="post" action="https://echo.htmlacademy.ru">
                   <p class="search__item">
-                    <label class="visually-hidden" for="search__input">Поиск по сайту</label>
-                    <input class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+                    <label class="visually-hidden" for="search__input">Поиск по новостям</label>
+                    <input class="search__input" type="text" name="search" placeholder="Поиск по новостям">
                   </p>
-                  <button class="search__button" type="submit">Найти</button>
+                  <button class="search__button" type="submit"><span class="visually-hidden">Найти</span></button>
                 </form>
               </div>
             </div>
@@ -118,78 +126,106 @@
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ приняла участие в открытии нового производства натяжных потолков нашими партнерами.
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Производство</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Производство</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Международная Мебельная Выставка</h3>
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ была спонсором Международной Мебельной Выставки в г. Москва.
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Выставки</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Выставки</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Второй Крымский Форум</h3>
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ является Генеральным партнером и спонсором Второго Крымского Форума в 2018 году.
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Выставки</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Выставки</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Теоретически-практический семинар </h3>
                 <p class="news__text">
-                  Компания КНТ-ПЛАСТ приняла участие в теоретически-практическом семинаре "Перезагрузка".
+                  Компания КНТ-ПЛАСТ приняла участие в теоретически-практическом семинаре "Перезагрузка". Компания КНТ-ПЛАСТ приняла участие в теоретически-практическом семинаре "Перезагрузка".
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Выставки</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Выставки</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Новое производство натяжных потолков</h3>
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ приняла участие в открытии нового производства натяжных потолков нашими партнерами.
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Производство</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Производство</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Международная Мебельная Выставка</h3>
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ была спонсором Международной Мебельной Выставки в г. Москва.
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Выставки</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Выставки</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Второй Крымский Форум</h3>
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ является Генеральным партнером и спонсором Второго Крымского Форума в 2018 году.
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Выставки</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Выставки</a>
+                </div>
               </li>
               <li class="news__item">
                 <h3 class="news__name">Теоретически-практический семинар </h3>
                 <p class="news__text">
                   Компания КНТ-ПЛАСТ приняла участие в теоретически-практическом семинаре "Перезагрузка".
                 </p>
-                <a class="news__button button button--more" href="#">Подробнее</a>
-                <a class="news__tag" href="#">Выставки</a>
+                <div class="news__bottom">
+                  <a class="news__button button button--more" href="news-item.html">Подробнее</a>
+                  <a class="news__tag" href="#">Выставки</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="products__pagination pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
               </li>
             </ul>
           </div>
         </section>
-      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container container">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-file" src="img/page-footer__logo.svg" alt="Логотип компании KNTPlast">
+          <img class="page-footer__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav">
           <div class="main-nav__wrapper">
+            <a class="main-nav__logo" href="index.html">
+              <img class="main-nav__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+            </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="about.html">О компании</a>
@@ -217,11 +253,15 @@
               <li class="phone__item">
                 <a href="tel:+79273524857">+7 (927) 352-48-57</a>
               </li>
+              <li class="phone__item phone__item--email">
+                <a href="mailto:kntplast@gmail.com">kntplast@gmail.com</a>
+              </li>
             </ul>
           </div>
           <!-- Переключатель языка сайта -->
         </nav>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
