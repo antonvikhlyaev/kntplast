@@ -3,6 +3,18 @@
 
   background-color: #ffffff;
   box-shadow: 0 6px 8px 0 rgba(192, 192, 196, 0.2);
+
+  &--sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+  }
+
+  &--sticky + .page-content {
+    padding-top: 100px;
+  }
 }
 
 .page-header__wrapper {
