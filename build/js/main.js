@@ -12,6 +12,31 @@ navToggle.addEventListener('click', function () {
   }
 })
 
+// Прилипающее меню
+window.onscroll = function () { myFunction() };
+
+var header = document.querySelector('.page-header');
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("page-header--sticky");
+  } else {
+    header.classList.remove("page-header--sticky");
+  }
+}
+
+// Прогресс-бар
+$(function () {
+  $(window).on("scroll resize", function () {
+    var o = $(window).scrollTop() / ($(document).height() - $(window).height());
+    $(".progress-bar").css({
+      "width": (100 * o | 0) + "%"
+    });
+    $('progress')[0].value = o;
+  })
+});
 
 // Всплывающее меню
 var ceilingButton = document.querySelector('.sorting__button--ceiling');
@@ -20,8 +45,14 @@ var ceilingDropdown = document.querySelector('.sorting__dropdown--ceiling');
 var furnitureButton = document.querySelector('.sorting__button--furniture');
 var furnitureDropdown = document.querySelector('.sorting__dropdown--furniture');
 
-ceilingButton.addEventListener('click', function(e) {
+ceilingButton.addEventListener('click', function (e) {
   e.preventDefault();
+
+  if (!furnitureDropdown.classList.contains('dropdown--closed')) {
+    furnitureDropdown.classList.remove('dropdown--opened');
+    furnitureDropdown.classList.add('dropdown--closed');
+  }
+
   if (ceilingDropdown.classList.contains('dropdown--closed')) {
     ceilingDropdown.classList.remove('dropdown--closed');
     ceilingDropdown.classList.add('dropdown--opened');
@@ -31,8 +62,14 @@ ceilingButton.addEventListener('click', function(e) {
   }
 })
 
-furnitureButton.addEventListener('click', function(e) {
+furnitureButton.addEventListener('click', function (e) {
   e.preventDefault();
+
+  if (!ceilingDropdown.classList.contains('dropdown--closed')) {
+    ceilingDropdown.classList.remove('dropdown--opened');
+    ceilingDropdown.classList.add('dropdown--closed');
+  }
+
   if (furnitureDropdown.classList.contains('dropdown--closed')) {
     furnitureDropdown.classList.remove('dropdown--closed');
     furnitureDropdown.classList.add('dropdown--opened');
