@@ -22,6 +22,12 @@ var furnitureDropdown = document.querySelector('.sorting__dropdown--furniture');
 
 ceilingButton.addEventListener('click', function(e) {
   e.preventDefault();
+
+  if (!furnitureDropdown.classList.contains('dropdown--closed')) {
+    furnitureDropdown.classList.remove('dropdown--opened');
+    furnitureDropdown.classList.add('dropdown--closed');
+  }
+
   if (ceilingDropdown.classList.contains('dropdown--closed')) {
     ceilingDropdown.classList.remove('dropdown--closed');
     ceilingDropdown.classList.add('dropdown--opened');
@@ -33,6 +39,12 @@ ceilingButton.addEventListener('click', function(e) {
 
 furnitureButton.addEventListener('click', function(e) {
   e.preventDefault();
+
+  if (!ceilingDropdown.classList.contains('dropdown--closed')) {
+    ceilingDropdown.classList.remove('dropdown--opened');
+    ceilingDropdown.classList.add('dropdown--closed');
+  }
+
   if (furnitureDropdown.classList.contains('dropdown--closed')) {
     furnitureDropdown.classList.remove('dropdown--closed');
     furnitureDropdown.classList.add('dropdown--opened');
