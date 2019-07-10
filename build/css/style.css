@@ -90,7 +90,9 @@ progress::-moz-progress-bar {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; }
+    z-index: 1000;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .page-header--sticky + .page-content {
     padding-top: 100px; }
 
