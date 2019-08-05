@@ -15,7 +15,7 @@
   }
 
   &--sticky + .page-content {
-    padding-top: 100px;
+    padding-top: 72px;
   }
 }
 
@@ -27,15 +27,22 @@
 }
 
 .page-header__logo {
-  width: 103px;
-  height: 73px;
-  margin: 0;
-  padding: 20px 0 25px;
+  align-self: flex-start;
+
+  width: 150px;
+  height: 32px;
+  margin-left: 20px;
+  padding: 20px 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    position: static;
     padding: 0 15px;
+
+    &--sticky + .page-content {
+      padding-top: 0;
+    }
   }
 
   .page-header__logo {
@@ -44,5 +51,16 @@
 
   .page-header__wrapper {
     flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    position: fixed;
+    padding: 0 15px;
+
+    &--sticky + .page-content {
+      padding-top: 100px;
+    }
   }
 }
