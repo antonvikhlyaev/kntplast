@@ -94,7 +94,7 @@ progress::-moz-progress-bar {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .page-header--sticky + .page-content {
-    padding-top: 100px; }
+    padding-top: 72px; }
 
 .page-header__wrapper {
   display: -webkit-box;
@@ -112,14 +112,19 @@ progress::-moz-progress-bar {
           align-items: center; }
 
 .page-header__logo {
-  width: 103px;
-  height: 73px;
-  margin: 0;
-  padding: 20px 0 25px; }
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 150px;
+  height: 32px;
+  margin-left: 20px;
+  padding: 20px 0 20px; }
 
 @media (min-width: 768px) {
   .page-header {
+    position: static;
     padding: 0 15px; }
+    .page-header--sticky + .page-content {
+      padding-top: 0; }
   .page-header__logo {
     display: none; }
   .page-header__wrapper {
@@ -127,6 +132,13 @@ progress::-moz-progress-bar {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; } }
+
+@media (min-width: 1170px) {
+  .page-header {
+    position: fixed;
+    padding: 0 15px; }
+    .page-header--sticky + .page-content {
+      padding-top: 100px; } }
 
 .main-nav {
   width: 100%;
@@ -138,7 +150,7 @@ progress::-moz-progress-bar {
 
 .main-nav__toggle {
   position: absolute;
-  top: 39px;
+  top: 15px;
   right: 25px;
   display: block;
   width: 40px;
@@ -208,7 +220,7 @@ progress::-moz-progress-bar {
 .main-nav__item a {
   position: relative;
   display: block;
-  padding: 20px 20px;
+  padding: 10px 20px;
   color: #505050; }
   .main-nav__item a[href]:focus, .main-nav__item a[href]:hover {
     color: #ffffff;
@@ -506,6 +518,7 @@ progress::-moz-progress-bar {
     font-size: 32px; }
 
 .promo__text {
+  display: block;
   max-width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -1041,8 +1054,7 @@ progress::-moz-progress-bar {
 
 .map {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1920px; }
+  width: 100%; }
 
 .map__title {
   margin: 0;
@@ -1869,12 +1881,15 @@ progress::-moz-progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
-  padding: 30px;
+  padding: 20px;
   background-color: #ffffff;
   border: 1px solid #cbcbcb;
   border-radius: 30px; }
@@ -1882,24 +1897,38 @@ progress::-moz-progress-bar {
     border-color: #68ba57; }
 
 .products__image {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0; }
-  .products__image img {
-    width: 100%; }
+  margin-right: 20px;
+  padding: 0;
+  width: 70px; }
 
 .products__drawing {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 70px; }
+
+.products__desc {
   margin: 0;
   padding: 0; }
 
 .products__name {
   margin: 0;
-  margin-bottom: 20px;
   padding: 0; }
 
 .products__text {
-  margin: 0;
-  padding: 0; }
+  display: none; }
 
 @media (min-width: 768px) {
   .products {
@@ -1925,15 +1954,26 @@ progress::-moz-progress-bar {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 30px; }
   .products__image {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 200px;
+    width: 100px;
     margin: 0;
     margin-right: 20px; }
   .products__drawing {
-    display: none; } }
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    margin-right: 20px; }
+  .products__text {
+    display: block; } }
 
 @media (min-width: 1170px) {
   .products {
@@ -1944,7 +1984,7 @@ progress::-moz-progress-bar {
     display: block;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 200px;
+    width: 100px;
     margin: 0;
     margin-right: 20px; }
   .products__price {

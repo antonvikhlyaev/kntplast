@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner-page">
-    <header class="page-header">
+    <header class="page-header page-header--sticky">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" width="103" height="73" src="img/logo.svg" alt="Логотип компании KNTPlast">
+          <picture>
+            <source media="(min-width: 1170px)" srcset="img/logo.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип компании KNTPlast">
+          </picture>
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
@@ -157,6 +160,9 @@
         </nav>
       </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/progress-bar.js"></script>
+    <script src="js/open-menu.js"></script>
+    <script src="js/sticky-menu.js"></script>
   </body>
 </html>
