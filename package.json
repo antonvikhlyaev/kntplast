@@ -9,7 +9,7 @@
     "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.4.6",
     "browser-sync": "^2.26.7",
-    "browserslist": "^4.4.1",
+    "browserslist": "^4.16.5",
     "csscomb": "^4.2.0",
     "del": "^3.0.0",
     "editorconfig-cli": "^0.3.0",
